@@ -24,6 +24,6 @@ func main() {
     faad := Faad{port: port, directory: directory}
     faad.url_handler()
 
-    log.Printf("Serving faadness at %s on HTTP port: %s\n", *directory, *port)
+    log.Printf("Serving faadness on HTTP port: %s\n", *port)
     log.Fatal(http.ListenAndServe(":"+*port, nil))
 }
