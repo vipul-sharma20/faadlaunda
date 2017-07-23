@@ -32,7 +32,7 @@ func catRequest() []byte {
 }
 
 func buildTemplate(w http.ResponseWriter, r *http.Request) {
-    t, _ := template.ParseFiles("cats.html")
+    t, _ := template.ParseFiles("templates/cats.html")
     body := catRequest()
     var context Context
 
