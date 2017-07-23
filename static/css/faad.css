@@ -1,0 +1,44 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+h3 #pronounce {
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
+#screen_image {
+    position: relative;
+    text-align: center;
+}
+
+#screen_image p {
+    font-size: 15px;
+}
+
+#word_detail {
+    line-height: 25%;
+}
+
+#meaning {
+    font-size: 15px;
+}
+
+#example {
+    color: #878787;
+}
+
+#pos {
+    font-size: 14px;
+}
+
+#description {
+    padding-top: 2px;
+    position: relative;
+    left: 39.5%;
+    width: 20%;
+}
+

@@ -5,6 +5,6 @@ import (
 )
 
 func (options *Faad) url_handler() {
-    http.HandleFunc("/faad", buildTemplate)
-    http.Handle("/", http.FileServer(http.Dir(*options.directory)))
+    http.HandleFunc("/", buildTemplate)
+    http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 }
